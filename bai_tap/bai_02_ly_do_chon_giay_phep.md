@@ -1,5 +1,9 @@
 # Lý do chọn giấy phép MIT thay vì GPL cho kho bài tập
+
 Tôi lựa chọn giấy phép MIT thay vì GPL dựa trên các lý do sau:
-*Thứ nhất, đây là kho bài tập cá nhân mang tính chất học tập và chia sẻ kiến thức. Giấy phép MIT thuộc nhóm giấy phép dễ dãi (Permissive), cho phép bất kỳ ai cũng có thể tự do truy cập, tham khảo, sao chép và sửa đổi mã nguồn mà không gặp phải các ràng buộc pháp lý phức tạp.
-*Thứ hai, giấy phép GPL mang tính Copyleft mạnh với cơ chế "lây nhiễm". Nếu áp dụng GPL, bất kỳ dự án nào tái sử dụng hoặc liên kết với mã nguồn này đều bắt buộc phải công khai toàn bộ mã nguồn dưới giấy phép GPL nếu không thì có rất nhiều hậu quả như là: Chấm dứt quyền sử dụng, dính tới kiện tụng pháp lý, bị buộc thu hồi sản phẩm, ảnh hưởng đến uy tín doanh nghiệp,...vv. Điều này có thể gây hạn chế cho các bạn sinh viên khác khi muốn tham khảo code để tích hợp vào các bài tập lớn hoặc dự án cá nhân có hướng thương mại hóa trong tương lai.
-*Tóm lại, chọn MIT giúp tối đa hóa khả năng tiếp cận và chia sẻ mã nguồn trong môi trường giáo dục, đồng thời vẫn bảo vệ tác giả thông qua điều khoản miễn trừ trách nhiệm pháp lý.
+
+Thứ nhất, đây là kho bài tập cá nhân mang tính chất học tập và chia sẻ kiến thức. Giấy phép MIT thuộc nhóm giấy phép dễ dãi (Permissive), cho phép bất kỳ ai cũng có thể tự do truy cập, tham khảo, sao chép và sửa đổi mã nguồn mà không gặp phải các ràng buộc pháp lý phức tạp.
+
+Thứ hai, giấy phép GPL mang tính Copyleft mạnh với cơ chế "lây nhiễm". Nếu áp dụng GPL, bất kỳ dự án nào tái sử dụng hoặc liên kết với mã nguồn này đều bắt buộc phải công khai toàn bộ mã nguồn dưới giấy phép GPL nếu không thì có rất nhiều hậu quả như là: Chấm dứt quyền sử dụng, dính tới kiện tụng pháp lý, bị buộc thu hồi sản phẩm, ảnh hưởng đến uy tín doanh nghiệp,...vv. Điều này có thể gây hạn chế cho các bạn sinh viên khác khi muốn tham khảo code để tích hợp vào các bài tập lớn hoặc dự án cá nhân có hướng thương mại hóa trong tương lai.
+
+Tóm lại, chọn MIT giúp tối đa hóa khả năng tiếp cận và chia sẻ mã nguồn trong môi trường giáo dục, đồng thời vẫn bảo vệ tác giả thông qua điều khoản miễn trừ trách nhiệm pháp lý.
