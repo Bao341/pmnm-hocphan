@@ -50,47 +50,28 @@
 
 
 
-\---
+---
 
 
 
-\## PHÂN TÍCH NGHĨA VỤ PHÁT SINH CHO DỰ ÁN THƯƠNG MẠI ĐÓNG NGUỒN
+## PHÂN TÍCH NGHĨA VỤ PHÁT SINH CHO DỰ ÁN THƯƠNG MẠI ĐÓNG NGUỒN
 
+### 1. Xác định các gói thuộc nhóm Copyleft mạnh (Strong Copyleft)
+Qua bảng kiểm tra trên, gói **PyQt5** (hoặc các thư viện tương tự như *GPL-Readline*) sử dụng giấy phép **GNU General Public License v3 (GPL v3)**. Đây là giấy phép thuộc nhóm **Copyleft mạnh**.
 
-
-\### 1. Xác định các gói thuộc nhóm Copyleft mạnh (Strong Copyleft)
-
-Qua bảng kiểm tra trên, gói \*\*PyQt5\*\* (hoặc các thư viện tương tự như \*GPL-Readline\*) sử dụng giấy phép \*\*GNU General Public License v3 (GPL v3)\*\*. Đây là giấy phép thuộc nhóm \*\*Copyleft mạnh\*\*.
-
-
-
-\### 2. Phân tích nghĩa vụ phát sinh đối với dự án thương mại đóng nguồn
-
+### 2. Phân tích nghĩa vụ phát sinh đối với dự án thương mại đóng nguồn
 Nếu dự án của chúng ta là phần mềm thương mại đóng nguồn (Proprietary Software), việc tích hợp các thư viện trên phát sinh các nghĩa vụ pháp lý quan trọng:
 
+* **Đối với các gói nhóm Permissive (MIT, BSD, Apache 2.0):**
+  - **Nghĩa vụ:** Rất linh hoạt, chỉ cần giữ lại thông báo bản quyền (Copyright Notice) và bản văn giấy phép gốc trong tài liệu đi kèm.
+  - **Quyền hạn:** Được phép giữ kín mã nguồn thương mại của dự án.
 
+* **Đối với gói Copyleft mạnh (PyQt5 - GPL v3):**
+  - **Hiệu ứng lan truyền (Virality Effect):** Nếu dự án đóng nguồn liên kết (link) hoặc tích hợp trực tiếp với thư viện GPL v3 và phân phối đến tay người dùng, toàn bộ mã nguồn của dự án thương mại sẽ bị coi là "sản phẩm phái sinh" (Derivative Work).
+  - **Bắt buộc mở mã nguồn:** Chúng ta **bắt buộc phải công khai toàn bộ mã nguồn** của sản phẩm thương mại dưới giấy phép GPL v3 cho khách hàng/cộng đồng.
+  - **Mâu thuẫn:** Nghĩa vụ này triệt hạ hoàn toàn mô hình kinh doanh phần mềm thương mại đóng nguồn độc quyền.
 
-\* \*\*Đối với các gói nhóm Permissive (MIT, BSD, Apache 2.0):\*\*
-
-&#x20; - \*\*Nghĩa vụ:\*\* Rất linh hoạt, chỉ cần giữ lại thông báo bản quyền (Copyright Notice) và bản văn giấy phép gốc trong tài liệu đi kèm.
-
-&#x20; - \*\*Quyền hạn:\*\* Được phép giữ kín mã nguồn thương mại của dự án.
-
-
-
-\* \*\*Đối với gói Copyleft mạnh (PyQt5 - GPL v3):\*\*
-
-&#x20; - \*\*Hiệu ứng lan truyền (Virality Effect):\*\* Nếu dự án đóng nguồn liên kết (link) hoặc tích hợp trực tiếp với thư viện GPL v3 và phân phối đến tay người dùng, toàn bộ mã nguồn của dự án thương mại sẽ bị coi là "sản phẩm phái sinh" (Derivative Work).
-
-&#x20; - \*\*Bắt buộc mở mã nguồn:\*\* Chúng ta \*\*bắt buộc phải công khai toàn bộ mã nguồn\*\* của sản phẩm thương mại dưới giấy phép GPL v3 cho khách hàng/cộng đồng.
-
-&#x20; - \*\*Mâu thuẫn:\*\* Nghĩa vụ này triệt hạ hoàn toàn mô hình kinh doanh phần mềm thương mại đóng nguồn độc quyền.
-
-
-
-\### 3. Giải pháp khuyến nghị
-
-\- \*\*Thay thế thư viện:\*\* Chuyển từ `PyQt5` (GPL v3) sang `PySide6` (sử dụng giấy phép LGPL - dẻo hơn cho phần mềm thương mại) hoặc dùng giao diện Web (Flask/FastAPI).
-
-\- \*\*Tách biệt kiến trúc:\*\* Nếu bắt buộc dùng gói GPL, phải tách thành một dịch vụ độc lập (Microservice/Process riêng) và giao tiếp qua mạng (HTTP API) thay vì import trực tiếp.
+### 3. Giải pháp khuyến nghị
+- **Thay thế thư viện:** Chuyển từ `PyQt5` (GPL v3) sang `PySide6` (sử dụng giấy phép LGPL - dẻo hơn cho phần mềm thương mại) hoặc dùng giao diện Web (Flask/FastAPI).
+- **Tách biệt kiến trúc:** Nếu bắt buộc dùng gói GPL, phải tách thành một dịch vụ độc lập (Microservice/Process riêng) và giao tiếp qua mạng (HTTP API) thay vì import trực tiếp.
 
